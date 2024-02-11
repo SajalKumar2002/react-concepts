@@ -8,6 +8,7 @@ import UseRef from './screens/UseRef';
 import UseContext from './screens/UseContext';
 
 import { CountProvider } from './context/createContext';
+import UseCallBack from './screens/UseCallBack';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <UseRedux2 />
         <UseRef />
         <UseContext />
+        <UseCallBack />
       </div>
     </CountProvider>
   )
