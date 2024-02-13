@@ -5,7 +5,7 @@ function UseStateCounter() {
 
     return (
         <div className='card'>
-            <h1>Use State Counter</h1>
+            <h1>Use State</h1>
             <p>Your Count is {count}.</p>
             <div className='buttons'>
                 <button onClick={() => setCount(count => count + 1)}>+ Increment</button>

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { CountProvider } from './context/createContext';
+
 import UseStateCounter from './screens/UseStateCounter';
 import UseReducerCounter from './screens/UseReducerCounter';
 import UseRedux from './screens/UseRedux'
@@ -7,9 +9,8 @@ import UseRedux2 from './screens/UseRedux2'
 import UseRef from './screens/UseRef';
 import UseContext from './screens/UseContext';
 import MemoApi from './screens/MemoApi';
-
-import { CountProvider } from './context/createContext';
 import UseCallBack from './screens/UseCallBack';
+import UseMemo from './screens/useMemo';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <UseContext />
         <UseCallBack />
         <MemoApi />
+        <UseMemo />
       </div>
     </CountProvider>
   )

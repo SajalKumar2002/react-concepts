@@ -24,7 +24,9 @@ const Memo = () => {
     <div className='card'>
       <h1>Memo</h1>
       <MemoizedComponent name={name} />
-      <button onClick={handleClick}>Change Name</button>
+      <div className='button'>
+        <button onClick={handleClick}>Change Name</button>
+      </div>
     </div>
   );
 };
