@@ -1,15 +1,16 @@
+// memo is included in api, in React docs
 // Memoized Component memoizes the component based on its props.
-// It means it won't re-render itself if the same props are passed.
-import React from 'react';
+// It means it won't re-render itself if the same props are passed
+import React, { memo } from 'react';
 
 // Functional component
 const MyComponent = ({ name }) => {
-  console.log('Rendering MyComponent');
+  console.log(`Rendering MyComponent with name: ${name}`);
   return <div>Hello, {name}!</div>;
 };
 
 // Wrap MyComponent with React.memo
-const MemoizedComponent = React.memo(MyComponent);
+const MemoizedComponent = memo(MyComponent);
 
 // Parent component
 const Memo = () => {

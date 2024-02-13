@@ -6,7 +6,7 @@ import UseRedux from './screens/UseRedux'
 import UseRedux2 from './screens/UseRedux2'
 import UseRef from './screens/UseRef';
 import UseContext from './screens/UseContext';
-import Memo from './screens/Memo';
+import MemoApi from './screens/MemoApi';
 
 import { CountProvider } from './context/createContext';
 import UseCallBack from './screens/UseCallBack';
@@ -23,7 +23,7 @@ export default function App() {
         <UseRef />
         <UseContext />
         <UseCallBack />
-        <Memo />
+        <MemoApi />
       </div>
     </CountProvider>
   )
